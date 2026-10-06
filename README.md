@@ -18,7 +18,7 @@ The `Selection Root` can be a normal Scene GameObject or a GameObject inside Pre
 - Editor preview without entering Play Mode.
 - Previews multiple eligible `DOTweenAnimation` components together.
 - `Stop and Restore Values` control for ending preview.
-- Compile-safe dependency guidance when DOTween Pro/editor preview APIs are unavailable.
+- Compile-safe fallback when DOTween Pro/editor preview APIs are unavailable.
 
 ## Requirements
 
@@ -40,7 +40,7 @@ DOTween core alone is not sufficient for preview functionality.
 
 ## Installation
 
-1. Install and set up DOTween and DOTween Pro through your legitimate DOTween installation.
+1. Install and set up DOTween and DOTween Pro through your own DOTween Pro installation.
 2. Copy `Editor/DOTweenSelectionAnimationPreviewerWindow.cs` into an `Editor` folder in your Unity project, for example:
 
 ```text
@@ -67,7 +67,7 @@ Changing the `Selection Root` stops and restores the current preview before swit
 
 ## Controls
 
-- `Selection Root`: Scene or Prefab Mode GameObject whose child `DOTweenAnimation` components will be previewed. Project prefab assets must be opened first.
+- `Selection Root`: Scene or Prefab Mode GameObject whose child `DOTweenAnimation` components will be previewed. Project prefab assets must be opened in Prefab Mode first.
 - `Use Selected`: assigns the active selected GameObject as the `Selection Root`.
 - `Include Inactive Objects`: includes `DOTweenAnimation` components on inactive child GameObjects.
 - `Only Include AutoPlay Animations`: previews only `DOTweenAnimation` components with AutoPlay enabled.
