@@ -1,6 +1,6 @@
 # DOTween Selection Animation Previewer
 
-DOTween Selection Animation Previewer is a Unity Editor utility for previewing eligible `DOTweenAnimation` components under a chosen `Selection Root` without entering Play Mode.
+DOTween Selection Animation Previewer previews multiple eligible DOTween animations together under a selected hierarchy root. It helps developers inspect how animations interact in scenes or Prefab Mode without entering Play Mode.
 
 The `Selection Root` can be a normal Scene GameObject or a GameObject inside Prefab Mode. The tool searches that root and its descendants so configured DOTween animations can be checked directly in the Editor.
 
@@ -90,7 +90,7 @@ When preview is stopped, active preview tweens are restored and killed, then DOT
 
 Tested restore cases included ordinary movement, scale, delayed tweens, finite loops, `isFrom`, and multiple simultaneous animations. This does not guarantee perfect restoration for every possible DOTween configuration.
 
-## Limitations / Scope
+## Limitations
 
 - Only `DOTweenAnimation` components under `Selection Root` and its descendants are considered.
 - Arbitrary runtime-created tweens are outside this tool's scope.
@@ -113,6 +113,22 @@ Validated with:
 - no-DOTween, DOTween-core-only, and DOTween-Pro environments
 
 Broader Unity or DOTween version compatibility has not been claimed.
+
+## 7 Tools in 7 Days — Day 6
+
+This tool is part of the **7 Tools in 7 Days** series.
+
+[Read the Day 6 development story on Substack](https://ecesefercioglu.substack.com/p/7-tools-in-7-days-day-6-dotween-selection)
+
+| Day | Tool |
+| --- | --- |
+| Day 1 | [Parent From Bounds](https://github.com/seferciogluecce/parent-from-bounds) |
+| Day 2 | [Separate Mesh Bodies](https://github.com/seferciogluecce/separate-mesh-bodies) |
+| Day 3 | [Brick Wall Generator](https://github.com/seferciogluecce/brick-wall-generator) |
+| Day 4 | [Particle System Context Previewer](https://github.com/seferciogluecce/particle-system-context-previewer) |
+| Day 5 | [Object Layout Tool](https://github.com/seferciogluecce/object-layout-tool) |
+| **Day 6** | **[DOTween Selection Animation Previewer](https://github.com/seferciogluecce/dotween-selection-animation-previewer)** |
+| Day 7 | [Wave Object Distributor](https://github.com/seferciogluecce/wave-object-distributor) |
 
 ## License
 
